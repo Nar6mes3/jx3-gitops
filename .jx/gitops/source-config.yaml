@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: spring-boot-maven-jenkinsfile
+    - name: spring-boot-rest-prometheus
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
