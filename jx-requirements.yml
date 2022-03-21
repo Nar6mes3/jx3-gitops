@@ -23,7 +23,8 @@ spec:
   - key: production
   ingress:
     domain: apps.cluster-rdtcd.rdtcd.sandbox1709.opentlc.com
-    kind: ingress
+    exposer: Route
+    kind: Route
     namespaceSubDomain: -jx.
     tls:
       email: ""
