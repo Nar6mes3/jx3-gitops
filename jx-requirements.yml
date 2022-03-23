@@ -23,7 +23,6 @@ spec:
   - key: production
   ingress:
     domain: apps.cluster-rdtcd.rdtcd.sandbox1709.opentlc.com
-    exposer: Route
     kind: Route
     namespaceSubDomain: -jx.
     tls:
@@ -32,6 +31,7 @@ spec:
       production: false
   pipelineUser:
     username: Nar6mes3
+    email: 'mestres@gmail.com'
   repository: bucketrepo
   secretStorage: local
   vault: {}
