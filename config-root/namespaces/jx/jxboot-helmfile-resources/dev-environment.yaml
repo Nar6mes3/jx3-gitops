@@ -30,5 +30,5 @@ spec:
     gitServer: https://github.com
     kubeProvider: "openshift"
     pipelineUsername: "Nar6mes3"
-    pipelineUserEmail: "jenkins-x@googlegroups.com"
+    pipelineUserEmail: "mestres@gmail.com"
     prowConfig: Scheduler

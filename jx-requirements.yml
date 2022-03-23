@@ -30,8 +30,8 @@ spec:
       enabled: false
       production: false
   pipelineUser:
+    email: mestres@gmail.com
     username: Nar6mes3
-    email: 'mestres@gmail.com'
   repository: bucketrepo
   secretStorage: local
   vault: {}

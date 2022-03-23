@@ -38,13 +38,14 @@ jxRequirements:
   - key: production
   ingress:
     domain: apps.cluster-rdtcd.rdtcd.sandbox1709.opentlc.com
-    kind: ingress
+    kind: Route
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: ""
       enabled: false
       production: false
   pipelineUser:
+    email: mestres@gmail.com
     username: Nar6mes3
   repository: bucketrepo
   secretStorage: local
