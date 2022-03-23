@@ -7,8 +7,6 @@ spec:
   - owner: Nar6mes3
     provider: https://github.com
     providerKind: github
-    repositories:
-    - name: spring-boot-watch-pipeline-activity
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
