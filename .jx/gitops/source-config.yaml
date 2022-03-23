@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: spring-boot-rest-prometheus-java11
     - name: spring-boot-watch-pipeline-activity
     scheduler: in-repo
   slack:
