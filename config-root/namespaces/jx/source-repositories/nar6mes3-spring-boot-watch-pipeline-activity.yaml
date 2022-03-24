@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Nar6mes3
+    provider: github
+    repository: spring-boot-watch-pipeline-activity
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: nar6mes3-spring-boot-watch-pipeline-activity
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Nar6mes3/spring-boot-watch-pipeline-activity.git
+  org: Nar6mes3
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-boot-watch-pipeline-activity
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Nar6mes3/spring-boot-watch-pipeline-activity
