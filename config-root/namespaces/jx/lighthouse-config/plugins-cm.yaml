@@ -6,6 +6,10 @@ data:
       repos:
       - Nar6mes3/jx3-gitops
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - Nar6mes3/spring-boot-watch-pipeline-activity
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +25,11 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      Nar6mes3/spring-boot-watch-pipeline-activity:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +37,22 @@ data:
     plugins:
       Nar6mes3/jx3-gitops:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      Nar6mes3/spring-boot-watch-pipeline-activity:
       - approve
       - assign
       - blunderbuss
@@ -55,6 +80,11 @@ data:
     - repos:
       - Nar6mes3/jx3-gitops
       trusted_org: todo
+    - repos:
+      - Nar6mes3/spring-boot-watch-pipeline-activity
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
