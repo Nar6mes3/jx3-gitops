@@ -11,3 +11,5 @@ metadata:
 secrets:
   - name: tekton-container-registry-auth
   - name: tekton-git
+imagePullSecrets:
+  - name: "tekton-container-registry-auth"
