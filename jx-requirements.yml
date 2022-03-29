@@ -22,7 +22,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: apps.cluster-rdtcd.rdtcd.sandbox1709.opentlc.com
+    domain: apps.cluster-8ztk8.8ztk8.sandbox674.opentlc.com
     kind: Route
     namespaceSubDomain: -jx.
     tls:
